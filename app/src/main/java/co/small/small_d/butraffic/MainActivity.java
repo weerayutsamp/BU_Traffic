@@ -1,6 +1,8 @@
 package co.small.small_d.butraffic;
 
+import android.content.Intent;
 import android.media.MediaPlayer;
+import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -47,7 +49,9 @@ public class MainActivity extends AppCompatActivity {
 
 
                 //Intent to WebView
-
+                Intent objIntent = new Intent(Intent.ACTION_VIEW);
+                objIntent.setData(Uri.parse("http://www.thaiandroidphone.com/"));
+                startActivity(objIntent);
 
             } //Event
         });
